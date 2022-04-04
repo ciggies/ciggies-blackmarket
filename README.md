@@ -9,7 +9,7 @@ A Simple blackmarket script for QBCore
 * [nh-context](https://github.com/nerohiro/nh-context)
 
 # Installation
-* Pretty much drag and drop just add ```lua ciggies-buyitems:client:menu``` To something in qb-target
+* Pretty much drag and drop just add ```lua ciggies-buyitems:client:menu``` To something in qb-target init.lua
 
 # Change Logs
 ### 1.0

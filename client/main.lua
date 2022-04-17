@@ -1,12 +1,12 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
-RegisterNetEvent('ciggies-buyitems:openShop')
-AddEventHandler('ciggies-buyitems:openShop', function ()
-    TriggerServerEvent("inventory:server:OpenInventory", "shop", "IllegalStore", Config.IllegalStore)
+RegisterNetEvent('ciggies-blackmarket:openShop')
+AddEventHandler('ciggies-blackmarket:openShop', function ()
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", Config.Shopname[k], Config.IllegalStore)
 end)
 
 
-RegisterNetEvent('ciggies-buyitems:client:menu', function()
+RegisterNetEvent('ciggies-blackmarket:client:menu', function()
     TriggerEvent('nh-context:sendMenu', {
         {
             id = 1,
@@ -18,7 +18,7 @@ RegisterNetEvent('ciggies-buyitems:client:menu', function()
             header = "Sketchy Dudes Trench Coat",
             txt = "Purchase im Illegal Items",
             params = {
-                event = "ciggies-buyitems:openShop",
+                event = "ciggies-blackmarket:openShop",
                 args = {
                     number = 2,
                     id = 3

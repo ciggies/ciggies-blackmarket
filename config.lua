@@ -1,5 +1,7 @@
 Config = Config or {}    
 
+Config.Shopname = 'IllegalStore'
+
 Config.IllegalStore = {
     label = "Some Sort Of Store?",  slots = 5,
     items = {
